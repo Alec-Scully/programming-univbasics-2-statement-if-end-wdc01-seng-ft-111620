@@ -1,8 +1,13 @@
-chance_of_rain = 0.2 
-puts "Let's go outside!"
-if chance_of_rain > 0.5
-  puts "Pack an umbrella!"
+
+#/if..else..end statment
+#current second is even output Even!
+#current second is odd output Odd!
+
+current_time = Time.now
+current_time = current_time.to_i 
+
+if current_time % 2 == 0
+  puts "Even!"
 else
-  puts "Enjoy the fine day!"
+  puts "Odd!"
 end
-puts "Oh, and always wear sunscreen!"
